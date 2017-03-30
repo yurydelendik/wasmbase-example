@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./jspm_packages/system.src.js"></script>
+  <script src="./config.js"></script>
+</head>
+<body>
+  <script>
+System.import('./hello/hello.js').then(function (test) {
+  // We need to wait for wasm modules to be loaded/compiled/initialized.
+  return test.ready.then(function () {
+    var universe = new test.Universe();
+    console.log(universe.giveAnswer());
+  });
+});
+  </script>
+</body></html>

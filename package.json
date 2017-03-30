@@ -1,0 +1,23 @@
+{
+  "name": "wasmbase-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "idl": "wasdk idl hello.idl",
+    "compile": "wasdk ez hello/hello.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jspm": "^0.16.53",
+    "wasdk": "^1.0.49"
+  },
+  "jspm": {
+    "dependencies": {
+      "wasmbase": "npm:wasmbase@^1.0.4"
+    },
+    "devDependencies": {}
+  }
+}
