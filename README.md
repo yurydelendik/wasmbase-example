@@ -7,19 +7,26 @@ npm install
 node_modules/.bin/jspm install
 ```
 
-## What was done already?
+## (Not needed but) it was done already
+
+The following steps is already performed for you -- mentioning them for reference.
 
 ```
 npm install wasdk jspm --save-dev
 node_modules/.bin/jspm install npm:wasmbase
-npm run idl
 ```
 
 and also "index.html" and "hello.idl" files were created.
 
 ## What's next?
 
-Change "Universe::giveAnswer" method in 'hello/hello.cpp' file:
+### Generate wrapper JS library
+
+Run `npm run idl` to generate wrapper JS in the 'hello/' folder.
+
+### Modify C++ code
+
+Change "Universe::giveAnswer" method in the 'hello/hello.cpp' file to add implementation of methods:
 
 ```
 bool Universe::giveAnswer(int* result)
@@ -29,6 +36,6 @@ bool Universe::giveAnswer(int* result)
 }
 ```
 
-and run `npm run compile`.
+### Compile and run
 
-Start local web server and open index.html in a web browser.
+Run `npm run compile`. Start local web server and open index.html in a web browser.
