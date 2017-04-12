@@ -12,7 +12,7 @@ node_modules/.bin/jspm install
 The following steps is already performed for you -- mentioning them for reference.
 
 ```
-npm install wasdk jspm --save-dev
+npm install wasdk jspm wasmbase --save-dev
 node_modules/.bin/jspm install npm:wasmbase
 ```
 
@@ -32,6 +32,12 @@ Change "Universe::giveAnswer" method in the 'hello/hello.cpp' file to add implem
 bool Universe::giveAnswer(int* result)
 {
   *result = 42;
+  return true;
+}
+
+bool Universe::say(wasmbase::StringBox* result)
+{
+  *result = new std::wstring(L"Hello, world!");
   return true;
 }
 ```

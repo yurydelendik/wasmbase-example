@@ -12,6 +12,7 @@ System.import('./hello/hello.js').then(function (test) {
   return test.ready.then(function () {
     var universe = new test.Universe();
     console.log(universe.giveAnswer());
+    console.log(universe.say());
   });
 });
   </script>
