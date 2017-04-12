@@ -7,6 +7,6 @@ System.config({
   },
 
   map: {
-    "wasmbase": "npm:wasmbase@1.0.4"
+    "wasmbase": "npm:wasmbase@1.0.6"
   }
 });

@@ -12,11 +12,12 @@
   "license": "ISC",
   "devDependencies": {
     "jspm": "^0.16.53",
-    "wasdk": "^1.0.49"
+    "wasdk": "^1.0.53",
+    "wasmbase": "^1.0.6"
   },
   "jspm": {
     "dependencies": {
-      "wasmbase": "npm:wasmbase@^1.0.4"
+      "wasmbase": "npm:wasmbase@^1.0.6"
     },
     "devDependencies": {}
   }
